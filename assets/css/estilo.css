@@ -1,0 +1,194 @@
+/*Imports*/
+@import url(https://fonts.googleapis.com/css?family=Muli);
+/*Reset*/
+*{
+    box-sizing: border-box;
+    font: inherit;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+audio, img, iframe, video{
+    display: inline-block;
+    height: auto;
+    width: 100%;
+}
+/*Textos*/
+.text-center{
+    text-align: center;
+}
+.title_dividir{
+    position: relative;
+}
+.title_dividir::after{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: 0;
+    bottom: -2px;
+    width: 40px;
+}
+/*Grids*/
+.container{
+    margin: 0 auto;
+    width: 99%;
+}
+[class*="col-"]{padding: 15px;}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/*Cards*/
+.box{
+    background-color: #fff;
+    box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.13);
+    border-radius: 8px;
+    color: #333;
+    min-height: 30vh;
+    padding: 1rem 2rem;
+}
+.box h2{
+    font-size: 1.6rem;
+}
+/*lista_tecnologias*/
+.lista_tecnologias{
+    margin-top: 10px;
+}
+.lista_tecnologias li{
+    font-size: 14px;
+}
+/*main*/
+.main{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*Menu*/
+.menu{
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    box-shadow: 4px 4px 15px 1px rgba(0, 0, 0, 0.17);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.snip1241 {
+    font-family: 'Raleway', Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  .snip1241 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+  }
+  .snip1241 li {
+    display: block;
+    list-style: outside none none;
+    margin: 20px 1em;
+    padding: 0;
+  }
+  .snip1241 a {
+    padding: 0.5em 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+  }
+  .snip1241 a:before,
+  .snip1241 a:after {
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: '';
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+  }
+  .snip1241 a:before {
+    right: 0;
+    top: 0;
+    border-right: 3px solid #fff;
+    border-top: 3px solid #fff;
+    -webkit-transform: translate(-100%, 50%);
+    transform: translate(-100%, 50%);
+  }
+  .snip1241 a:after {
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    -webkit-transform: translate(100%, -50%);
+    transform: translate(100%, -50%);
+  }
+  .snip1241 a:hover,
+  .snip1241 .current a {
+    color: #ffffff;
+  }
+  .snip1241 a:hover:before,
+  .snip1241 .current a:before,
+  .snip1241 a:hover:after,
+  .snip1241 .current a:after {
+    -webkit-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    opacity: 1;
+  }
+.foto_perfil img{
+    border-radius: 50%;
+    border: 3px solid #fff;
+    filter: grayscale(100%);
+    height: 20vh;
+    width: 10vw;
+}
+/*Sections*/
+.wrap .content .container{
+    padding: 3rem 0;
+}
+/*********
+Experiencia desktop*/
+@media(min-width: 800px){
+    .main{
+        flex-direction: row;
+    }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .row{flex-direction: row;}
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        width: 20%;
+    }
+    .menu .container_links{
+        display: block;
+        width: 80%;
+    }
+    .wrap{width: 80%;}
+}
